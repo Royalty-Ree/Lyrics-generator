@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Ai lyrics generator</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
 
     <main>
         <form id="lyrics-generator-form">
-            <input type="text" id="song-topic" placeholder= "Enter the topic of your song" autofocus required autocomplete="off" class="instructions" />
+            <input type="text" id="user-instructions" placeholder= "Enter the topic of your song" autofocus required autocomplete="off" class="instructions" />
             <input type="submit" class="submit-button"/>
         </form>
         <div class="lyrics" id="lyrics"></div>
