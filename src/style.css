@@ -19,12 +19,21 @@ h1 {
     color: #E0E0E0;
 }
 
-form {
-    padding: 30px;
+.form-container {
     background-color: white;
-    border-radius: 10px;
-    display: flex;
     margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 30px;
+}
+form {
+    display: flex; 
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
 }
 
 .instructions {
@@ -55,8 +64,10 @@ form {
     padding: 20px;
     line-height: 2;
     border-left: 3px solid gray;
-    
+}
 
+.hidden {
+  display: none;
 }
 
 footer {
@@ -68,4 +79,19 @@ footer {
 
 a {
     color: rgb(226, 30, 226);
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

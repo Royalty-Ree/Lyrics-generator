@@ -15,11 +15,14 @@
     </header>
 
     <main>
+         <div class="form-container">
         <form id="lyrics-generator-form">
             <input type="text" id="user-instructions" placeholder= "Enter the topic of your song" autofocus required autocomplete="off" class="instructions" />
             <input type="submit" class="submit-button"/>
         </form>
-        <div class="lyrics" id="lyrics"></div>
+        <div class="hint">i.e: Flower, love or heartbreak</div>
+        </div>
+        <div class="lyrics hidden" id="lyrics"></div>
         
     </main>
     <script src="src/index.js"></script>
