@@ -9,5 +9,5 @@ function generateLyrics(event) {
 });
 }
 
-let lyricsFormElement = document.querySelector("lyrics-generator-form")
+let lyricsFormElement = document.querySelector("#lyrics-generator-form")
 lyricsFormElement.addEventListener("submit", generateLyrics)
